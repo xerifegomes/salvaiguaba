@@ -38,15 +38,21 @@ export default function Hero() {
 
           {/* Action buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <button className="flex items-center gap-3 px-8 py-4 bg-[var(--highlight-green)] text-[var(--primary-dark)] rounded-full hover:bg-[var(--primary-teal)] hover:text-white transition-all duration-300 font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+            <a 
+              href="#bags"
+              className="flex items-center gap-3 px-8 py-4 bg-[var(--highlight-green)] text-[var(--primary-dark)] rounded-full hover:bg-[var(--primary-teal)] hover:text-white transition-all duration-300 font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+            >
               <Smartphone className="w-5 h-5" />
-              <span>Baixar o app</span>
-            </button>
+              <span>Ver bags disponíveis</span>
+            </a>
             
-            <button className="flex items-center gap-3 px-8 py-4 border-2 border-white text-white rounded-full hover:bg-white hover:text-[var(--primary-dark)] transition-all duration-300 font-bold text-lg">
+            <a
+              href="#how-it-works"
+              className="flex items-center gap-3 px-8 py-4 border-2 border-white text-white rounded-full hover:bg-white hover:text-[var(--primary-dark)] transition-all duration-300 font-bold text-lg"
+            >
               <Play className="w-5 h-5" />
               <span>Como funciona</span>
-            </button>
+            </a>
           </div>
 
           {/* Hero stats */}

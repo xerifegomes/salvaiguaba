@@ -96,7 +96,7 @@ export default function Home() {
         <HowItWorks />
 
         {/* Map Section */}
-        <section className="py-16 lg:py-24 bg-white">
+        <section id="bags" className="py-16 lg:py-24 bg-white">
           <div className="container">
             {/* Section Header */}
             <div className="text-center mb-12">

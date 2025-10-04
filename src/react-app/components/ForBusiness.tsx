@@ -101,14 +101,20 @@ export default function ForBusiness() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="btn-secondary inline-flex items-center gap-3 text-lg px-8 py-4">
+              <button 
+                onClick={() => alert('Em breve! Cadastro de parceiros estará disponível em breve.')}
+                className="btn-secondary inline-flex items-center gap-3 text-lg px-8 py-4"
+              >
                 <span>Torne-se um parceiro</span>
                 <ArrowRight className="w-5 h-5" />
               </button>
               
-              <button className="btn-primary inline-flex items-center gap-3 text-lg px-8 py-4">
+              <a
+                href="#how-it-works"
+                className="btn-primary inline-flex items-center gap-3 text-lg px-8 py-4"
+              >
                 <span>Saiba mais</span>
-              </button>
+              </a>
             </div>
           </div>
 
@@ -174,12 +180,18 @@ export default function ForBusiness() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-secondary bg-[var(--highlight-green)] hover:bg-white hover:text-[var(--primary-dark)] inline-flex items-center gap-3 text-lg px-8 py-4">
+            <button 
+              onClick={() => alert('Em breve! Cadastro de estabelecimentos estará disponível em breve.')}
+              className="btn-secondary bg-[var(--highlight-green)] hover:bg-white hover:text-[var(--primary-dark)] inline-flex items-center gap-3 text-lg px-8 py-4"
+            >
               <span>Cadastre seu estabelecimento</span>
               <ArrowRight className="w-5 h-5" />
             </button>
             
-            <button className="border-2 border-white text-white hover:bg-white hover:text-[var(--primary-dark)] inline-flex items-center gap-3 text-lg px-8 py-4 rounded-full font-bold transition-all duration-300">
+            <button 
+              onClick={() => alert('Contato: salvaiguaba@gmail.com | WhatsApp: (22) 99999-9999')}
+              className="border-2 border-white text-white hover:bg-white hover:text-[var(--primary-dark)] inline-flex items-center gap-3 text-lg px-8 py-4 rounded-full font-bold transition-all duration-300"
+            >
               <span>Fale com nosso time</span>
             </button>
           </div>
