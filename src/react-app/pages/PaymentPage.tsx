@@ -10,11 +10,11 @@ export default function PaymentPage() {
   const { orderId } = useParams<{ orderId: string }>();
   const navigate = useNavigate();
   const [selectedMethod, setSelectedMethod] = useState<PaymentMethod>('pix');
-  const [orderData, setOrderData] = useState({
+  const orderData = {
     amount: 12.50, // Será carregado do backend
     bagName: 'Bag Surpresa',
     establishmentName: 'Padaria Sol'
-  });
+  };
 
   const handlePaymentSuccess = () => {
     // Redirecionar para página de pedidos

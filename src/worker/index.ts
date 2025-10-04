@@ -20,8 +20,7 @@ import {
   type BagWithEstablishment,
   type OrderWithDetails
 } from "@/shared/types";
-import Stripe from 'stripe';
-import { MercadoPagoConfig, Payment, Preference } from 'mercadopago';
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
 const app = new Hono<{ Bindings: Env }>();
 
@@ -569,7 +568,7 @@ app.post('/api/geocode', authMiddleware, zValidator("json", z.object({
       const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=${apiKey}`;
       
       const response = await fetch(url);
-      const data = await response.json();
+      const data = await response.json() as any;
       
       if (data.status === 'OK' && data.results && data.results.length > 0) {
         const result = data.results[0];

@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Upload, X, Image as ImageIcon, Loader, Plus } from 'lucide-react';
+import { X, Loader, Plus } from 'lucide-react';
 
 export interface MultiImageUploadProps {
   onUploadComplete: (urls: string[], keys: string[]) => void;
