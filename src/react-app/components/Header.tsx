@@ -91,10 +91,13 @@ export default function Header() {
                 </div>
               ) : (
                 <>
-                  <button className="btn-primary flex items-center gap-2 px-6 py-3">
+                  <a 
+                    href="#bags"
+                    className="btn-primary flex items-center gap-2 px-6 py-3"
+                  >
                     <Download className="w-4 h-4" />
-                    <span>Baixar app</span>
-                  </button>
+                    <span>Ver bags</span>
+                  </a>
                   <button
                     onClick={() => redirectToLogin()}
                     className="btn-secondary flex items-center gap-2 px-6 py-3"
@@ -210,13 +213,14 @@ export default function Header() {
                 </div>
               ) : (
                 <div className="space-y-4">
-                  <button 
+                  <a
+                    href="#bags"
                     className="w-full btn-primary flex items-center gap-3 justify-center p-4"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <Download className="w-5 h-5" />
-                    <span>Baixar app</span>
-                  </button>
+                    <span>Ver bags</span>
+                  </a>
                   
                   <button
                     onClick={() => {
